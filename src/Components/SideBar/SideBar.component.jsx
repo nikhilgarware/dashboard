@@ -1,13 +1,13 @@
 import React from "react";
-import { Row, Layout, Menu } from "antd";
-import { CustomSider, CustomMenu } from "./SideBar.styled";
+import { Menu } from "antd";
+import { CustomSider, CustomMenu, CustomLayout } from "./SideBar.styled";
 const { SubMenu } = Menu;
 function SideBar() {
   return (
     <div>
-      <Layout style={{ minHeight: "100vh" }}>
+      <CustomLayout style={{ minHeight: "100vh" }}>
         <CustomSider>
-          <CustomMenu theme={"dark"} mode="inline">
+          <CustomMenu mode="inline">
             <Menu.Item key="1">Menu 1</Menu.Item>
             <Menu.Item key="2">Menu 2</Menu.Item>
             <SubMenu title="Sub Menu">
@@ -22,7 +22,7 @@ function SideBar() {
             </SubMenu>
           </CustomMenu>
         </CustomSider>
-      </Layout>
+      </CustomLayout>
     </div>
   );
 }
