@@ -3,6 +3,7 @@ import styled from "styled-components";
 const { Sider } = Layout;
 
 export const CustomSider = styled(Sider)`
+  display: "flex";
   background-color: ${(props) => props.theme["main-background"]};
 `;
 
